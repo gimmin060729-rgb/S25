@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy S25 Ultra | Samsung</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="완벽을 넘어선 혁신, Galaxy S25 Ultra. 갤럭시 AI와 100배 스페이스 줌, 다크 티타늄 디자인의 경이로운 조화를 만나보세요.">
+    <meta property="og:title" content="Galaxy S25 Ultra | Samsung">
+    <meta property="og:description" content="완벽을 넘어선 혁신, Galaxy S25 Ultra. 갤럭시 AI와 100배 스페이스 줌, 다크 티타늄 디자인의 경이로운 조화를 만나보세요.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header GNB -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#" class="logo">GALAXY S25 ULTRA</a>
+            
+            <!-- Mobile Hamburger Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <nav class="gnb-nav" id="gnbNav">
+                <ul class="gnb-menu">
+                    <li><a href="#ai">AI 혁신</a></li>
+                    <li><a href="#camera">100x 줌 카메라</a></li>
+                    <li><a href="#design">티타늄 디자인</a></li>
+                </ul>
+            </nav>
+
+            <!-- Pre-order Button -->
+            <div class="header-cta">
+                <a href="#buy" class="btn btn-primary">사전예약</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1 class="hero-title animate-on-load">Galaxy AI is here.</h1>
+                <p class="hero-subtitle animate-on-load">상상하던 미래가 손안에서 펼쳐집니다. 새로운 갤럭시 S25 울트라와 만나보세요.</p>
+                <div class="hero-image-container animate-on-load">
+                    <img src="img/main.jpg" alt="Galaxy S25 Ultra 실루엣" class="hero-device-img">
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">스크롤하여 알아보기</span>
+            </div>
+        </section>
+
+        <!-- On-Device AI Section -->
+        <section id="ai" class="scroll-section">
+            <div class="section-container">
+                <div class="section-header fade-up">
+                    <span class="badge">ON-DEVICE AI</span>
+                    <h2 class="section-title">스마트폰의 한계를 넘는 AI 혁신</h2>
+                    <p class="section-desc">클라우드 연결 없이 기기 자체에서 구동되는 강력한 온디바이스 AI가 일상을 새롭게 재정의합니다.</p>
+                </div>
+
+                <!-- Row 1: Zig-zag (Text Left, Image Right) -->
+                <div class="ai-row">
+                    <div class="ai-text-col slide-left">
+                        <h3 class="feature-title">실시간 통역<br><span class="highlight">Live Translate</span></h3>
+                        <p class="feature-desc">통화는 물론, 대면 대화에서도 지연 없는 실시간 양방향 번역을 제공합니다. 네트워크가 없는 순간에도 언어의 장벽을 뛰어넘으세요.</p>
+                        <button class="btn btn-outline btn-demo-trigger" id="btnTranslateDemo">실시간 통역 시뮬레이션</button>
+                    </div>
+                    <div class="ai-img-col slide-right">
+                        <div class="img-wrapper demo-container" id="translateDemoWrapper">
+                            <img src="img/on1.jpg" alt="실시간 통역 기능 시연" class="demo-static-img">
+                            <!-- Live Translate Mock Screen Overlay -->
+                            <div class="mock-overlay" id="translateMockScreen">
+                                <div class="mock-screen-header">
+                                    <span class="mock-caller-name">갤럭시 AI 통역기</span>
+                                    <button class="mock-close-btn" id="closeTranslateMock">&times;</button>
+                                </div>
+                                <div class="mock-chat-area" id="translateChatArea">
+                                    <!-- Dynamic chat bubbles will be generated in a loop via JS -->
+                                </div>
+                                <div class="mock-status-bar" id="translateStatusBar">AI 실시간 번역 진행 중</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Row 2: Zig-zag (Image Left, Text Right via row-reverse) -->
+                <div class="ai-row alt-row">
+                    <div class="ai-text-col slide-right">
+                        <h3 class="feature-title">서클 투 서치<br><span class="highlight">Circle to Search</span></h3>
+                        <p class="feature-desc">화면 속 궁금한 대상에 간단히 동그라미를 그리는 것만으로 즉시 구글 검색 결과를 확인하세요. 텍스트 검색을 위한 번거로운 타이핑이 필요 없습니다.</p>
+                        <button class="btn btn-outline btn-demo-trigger" id="btnCircleDemo">화면 검색 시뮬레이션</button>
+                    </div>
+                    <div class="ai-img-col slide-left">
+                        <div class="img-wrapper demo-container" id="circleDemoWrapper">
+                            <img src="img/on2.jpg" alt="서클 투 서치 기능 시연" class="demo-static-img">
+                            <!-- Circle to Search Overlay -->
+                            <div class="mock-overlay" id="circleMockScreen">
+                                <button class="mock-close-btn" id="closeCircleMock">&times;</button>
+                                <div class="circle-pointer-hint">이미지 속 갤럭시 디바이스를 클릭해 원을 그리세요!</div>
+                                <div class="circle-target-area" id="circleTarget"></div>
+                                <div class="animated-circle" id="drawCircle"></div>
+                                <div class="mock-search-results" id="searchResultCard">
+                                    <div class="result-header">Google 검색 결과</div>
+                                    <div class="result-body">
+                                        <span class="result-category">스마트폰 정보</span>
+                                        <h4 class="result-title">Galaxy S25 Ultra (티타늄 실버 블루)</h4>
+                                        <p class="result-snippet">삼성전자의 차세대 AI 플래그십 스마트폰. 더욱 가벼워진 초경량 티타늄 프레임과 온디바이스 실시간 AI 통역, 스페이스 줌 탑재.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 100x Space Zoom Camera Section -->
+        <section id="camera" class="scroll-section">
+            <div class="camera-parallax-container">
+                <div class="camera-bg-image" id="parallaxBg">
+                    <img src="img/100x.jpg" alt="우주의 압도적인 100배 줌 디테일">
+                </div>
+                <div class="camera-overlay"></div>
+                <div class="camera-content">
+                    <div class="section-header text-center fade-up">
+                        <span class="badge badge-accent">100X SPACE ZOOM</span>
+                        <h2 class="section-title text-white">우주를 더 가깝게, 선명하게</h2>
+                        <p class="section-desc text-gray">쿼드 텔레 시스템과 업그레이드된 나이토그래피가 결합되어 어두운 밤하늘에서도 놀라운 디테일의 100배 줌 화질을 구현합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Titanium Design Section -->
+        <section id="design" class="scroll-section">
+            <div class="section-container">
+                <div class="section-header text-center fade-up">
+                    <span class="badge">PREMIUM TITANIUM</span>
+                    <h2 class="section-title">다크 티타늄, 견고함과 아름다움의 조화</h2>
+                    <p class="section-desc">우주선 수준의 초경량 티타늄 프레임으로 극대화된 내구성과 손 끝에 닿는 프리미엄 감촉을 완성했습니다.</p>
+                    
+                    <!-- Simpler design color selector -->
+                    <div class="design-gallery-swapper">
+                        <button type="button" class="gallery-dot active" data-color-name="티타늄 그레이" data-img1="img/Samsung-Galaxy-S25-Ultra-Mockup.jpg" data-img2="img/Samsung-Galaxy-S25-Ultra-Mockup (1).jpg" style="background-color: #8c8c8c;" title="티타늄 그레이"></button>
+                        <button type="button" class="gallery-dot" data-color-name="티타늄 실버 블루" data-img1="img/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front.jpg" data-img2="img/THUMB_005-galaxy-s25ultra-titaniumsilverblue-device-spen-back.jpg" style="background-color: #8fa4bd;" title="티타늄 실버 블루"></button>
+                    </div>
+                </div>
+                <div class="design-visual-grid fade-up">
+                    <div class="design-card">
+                        <img src="img/Samsung-Galaxy-S25-Ultra-Mockup.jpg" alt="Galaxy S25 Ultra Titanium Gray Front" id="galleryImg1">
+                        <div class="card-info">
+                            <h4 id="galleryTitle1">티타늄 그레이 (전면)</h4>
+                        </div>
+                    </div>
+                    <div class="design-card">
+                        <img src="img/Samsung-Galaxy-S25-Ultra-Mockup (1).jpg" alt="Galaxy S25 Ultra Titanium Gray Side View" id="galleryImg2">
+                        <div class="card-info">
+                            <h4 id="galleryTitle2">초슬림 베젤 디스플레이</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA & Footer Section -->
+        <footer id="buy">
+            <div class="footer-cta-container">
+                <div class="cta-content fade-up">
+                    <h2 class="cta-title">Galaxy S25 Ultra 사전예약</h2>
+                    <p class="cta-subtitle">지금 바로 사전 예약하고 가장 먼저 갤럭시 AI의 무한한 가능성을 경험해 보세요.</p>
+                    
+                    <div class="benefit-grid">
+                        <div class="benefit-card">
+                            <div class="icon">✨</div>
+                            <h5>더블 스토리지 혜택</h5>
+                            <p>256GB 가격으로 512GB 업그레이드</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="icon">🛡️</div>
+                            <h5>Samsung Care+ 1년권</h5>
+                            <p>파손 보장 및 보증 연장 혜택 제공</p>
+                        </div>
+                        <div class="benefit-card">
+                            <div class="icon">🎧</div>
+                            <h5>Galaxy Buds3 할인권</h5>
+                            <p>버즈3 패키지 구매 시 최대 50% 할인</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="btn btn-large btn-glow">사전예약 신청하기</a>
+                </div>
+            </div>
+            
+            <!-- Bottom Footer Info -->
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">고객지원</a>
+                </div>
+                <p class="copyright">&copy; 2026 Samsung Electronics Co., Ltd. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Interactive Pre-order Modal -->
+    <div class="modal-backdrop" id="preorderModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closePreorderModal">&times;</button>
+            <div class="modal-body-grid">
+                <!-- Left Column: Visual Swap -->
+                <div class="modal-visual-col">
+                    <div class="modal-image-wrapper">
+                        <img src="img/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front.jpg" alt="Galaxy S25 Ultra Preview" id="preorderPreviewImg">
+                    </div>
+                    <div class="modal-device-desc">
+                        <h4 id="selectedDeviceTitle">Galaxy S25 Ultra (512GB)</h4>
+                        <p class="price-info"><span class="price-discount">1,698,400원</span> <span class="price-original">1,841,400원</span></p>
+                    </div>
+                </div>
+                
+                <!-- Right Column: Interactive Form -->
+                <div class="modal-form-col">
+                    <h3>사전예약 신청</h3>
+                    <p class="modal-subtitle-text">선택하신 스펙으로 한정 혜택 예약을 진행합니다.</p>
+                    
+                    <form id="preorderForm" onsubmit="return false;">
+                        <!-- Color Selector -->
+                        <div class="form-group">
+                            <label class="form-label">티타늄 컬러</label>
+                            <div class="color-options">
+                                <button type="button" class="color-dot active" data-color="silverblue" data-img="img/THUMB_001-galaxy-s25ultra-titaniumsilverblue-device-spen-front.jpg" style="background-color: #8fa4bd;" title="티타늄 실버 블루"></button>
+                                <button type="button" class="color-dot" data-color="gray" data-img="img/Samsung-Galaxy-S25-Ultra-Mockup.jpg" style="background-color: #8c8c8c;" title="티타늄 그레이"></button>
+                                <button type="button" class="color-dot" data-color="black" data-img="img/THUMB_005-galaxy-s25ultra-titaniumsilverblue-device-spen-back.jpg" style="background-color: #222222;" title="티타늄 블랙"></button>
+                            </div>
+                        </div>
+
+                        <!-- Storage Options -->
+                        <div class="form-group">
+                            <label class="form-label">저장 용량</label>
+                            <div class="storage-options">
+                                <button type="button" class="storage-btn active" data-storage="512GB" data-price="1,698,400원">512GB <span class="badge-mini">더블 스토리지</span></button>
+                                <button type="button" class="storage-btn" data-storage="1TB" data-price="1,984,000원">1TB</button>
+                            </div>
+                        </div>
+
+                        <!-- Personal Info -->
+                        <div class="form-group">
+                            <label for="userName" class="form-label">예약자 성함</label>
+                            <input type="text" id="userName" class="form-input" placeholder="이름을 입력하세요" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userPhone" class="form-label">연락처</label>
+                            <input type="tel" id="userPhone" class="form-input" placeholder="010-1234-5678" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="termsCheck" required>
+                            <label for="termsCheck" class="checkbox-label">개인정보 수집 및 사전예약 이용 약관에 동의합니다.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full" id="submitPreorder">예약 신청 완료</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer">
+        <div class="toast-card">
+            <span class="toast-icon">✓</span>
+            <div class="toast-text-group">
+                <h5>사전예약 완료</h5>
+                <p>갤럭시 S25 울트라 예약이 완료되었습니다. 확인 문자가 발송됩니다.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
